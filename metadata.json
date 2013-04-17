@@ -1,8 +1,7 @@
 {
 	"name":"Rook Nightclub",
-	"directory":"rooknightclub",
-	"thumbnail":"/rooknightclub/rooknightclub.jpg",
-	"screenshot":"/rooknightclub/rooknightclub.jpg",
+	"thumbnail":"rooknightclub.jpg",
+	"screenshot":"rooknightclub.jpg",
 	"pageTypes":[],
 	"defaultColorSwatch":"Bright 2",
 	"defaultFontSwatch":"Droid Serif"
