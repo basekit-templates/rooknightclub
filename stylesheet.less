@@ -418,12 +418,13 @@ hr.line.align-right {
 
 .widget.extendednavigation 
 {
-    float: right;
 }
 
 .widget.extendednavigation ul {
     padding: 0;     
     margin: 0;
+    border-top: 1px solid lighten(@color-swatch2,20%);
+    border-bottom: 1px solid lighten(@color-swatch2,20%);
 }
             
 .widget.extendednavigation ul li {
@@ -458,8 +459,8 @@ hr.line.align-right {
 .widget.extendednavigation ul li.folder .text 
 {
     display:inline-block;
-    padding: 18px 0px;
-    color: @color-swatch4;
+    padding: 14px 20px;
+    color: lighten(@color-swatch4,20%);
 }
 
 .widget.extendednavigation ul li.folder ul li .text 
@@ -611,13 +612,11 @@ hr.line.align-right {
 .widget.contactform fieldset input {
     height: 40px;
     width: 100%;
-    border: 1px solid lighten(@color-swatch4,60%);
+    border: 1px solid lighten(@color-swatch4,30%);
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     color: @color-swatch4;
-    background-color: lighten(@color-swatch2,50%);
-    background-image: url(assets/images/bg.png);
-    background-repeat: repeat;
+    background-color: lighten(@color-swatch2,20%);
     -webkit-border-radius: 4px;
     -moz-border-radius: 4px;
     border-radius: 4px;
@@ -629,13 +628,11 @@ hr.line.align-right {
 .widget.contactform fieldset textarea {
     height: 100px;
     width: 100%;
-    border: 1px solid lighten(@color-swatch4,60%);
+    border: 1px solid lighten(@color-swatch4,30%);
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     color: @color-swatch4;
-    background-color: lighten(@color-swatch2,50%);
-    background-image: url(assets/images/bg.png);
-    background-repeat: repeat;
+    background-color: lighten(@color-swatch2,20%);
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
     border-radius: 2px;
