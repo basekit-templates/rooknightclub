@@ -1,8 +1,141 @@
 {
 	"name":"Rook Nightclub",
-	"thumbnail":"rooknightclub.jpg",
-	"screenshot":"rooknightclub.jpg",
-	"pageTypes":[],
-	"defaultColorSwatch":"Colorful 2",
-	"defaultFontSwatch":"Droid Serif"
+	"thumbnail":"rooknightclub.png",
+	"screenshot":"rooknightclub.png",
+	"colorSwatches":
+    {
+        "Swatch 1": {
+            "color1":"#020202",
+            "color2":"#373535",
+            "color3":"#d21034",
+            "color4":"#ffffff",
+            "color5":"#aaaaaa",
+            "color6":"#ffffff",
+            "color7":"#4f4f4f"
+        },
+        "Swatch 2": {
+            "color1":"#0c0b0c",
+            "color2":"#373535",
+            "color3":"#7500b4",
+            "color4":"#e2e2e2",
+            "color5":"#a5a5a5",
+            "color6":"#e2e2e2",
+            "color7":"#271f2d"
+        },
+        "Swatch 3": {
+            "color1":"#000000",
+            "color2":"#373535",
+            "color3":"#ccb760",
+            "color4":"#ededee",
+            "color5":"#dbdadd",
+            "color6":"#ededee",
+            "color7":"#3d4847"
+        },
+        "Swatch 4": {
+            "color1":"#000110",
+            "color2":"#292828",
+            "color3":"#db4b56",
+            "color4":"#ebebed",
+            "color5":"#ccccd3",
+            "color6":"#ebebed",
+            "color7":"#803c3d"
+        },
+        "Swatch 5": {
+            "color1":"#000000",
+            "color2":"#373535",
+            "color3":"#ff6b46",
+            "color4":"#ebebeb",
+            "color5":"#999999",
+            "color6":"#ebebeb",
+            "color7":"#5b3221"
+        }
+    },
+    "fontSwatch": {
+       "title": "Droid Sans",
+        "font1": {
+            "font-family": "Droid Sans",
+            "font-size": "32px",
+            "font-weight": "400",
+            "line-height": "40px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font2": {
+            "font-family": "Droid Sans",
+            "font-size": "30px",
+            "font-weight": "inherit",
+            "line-height": "38px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font3": {
+            "font-family": "Droid Sans",
+            "font-size": "26px",
+            "font-weight": "inherit",
+            "line-height": "34px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font4": {
+            "font-family": "Droid Sans",
+            "font-size": "20px",
+            "font-weight": "inherit",
+            "line-height": "28px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font5": {
+            "font-family": "Droid Sans",
+            "font-size": "16px",
+            "font-weight": "400",
+            "line-height": "28px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        },
+        "font6": {
+            "font-family": "Droid Sans",
+            "font-size": "15px",
+            "font-weight": "400",
+            "line-height": "23px",
+            "color": "@color-swatch6",
+            "color-hover": "@color-swatch3",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch1",
+            "background-color-hover": "@color-swatch1"
+        },
+        "font7": {
+            "font-family": "Droid Sans",
+            "font-size": "14px",
+            "font-weight": "400",
+            "line-height": "32px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit",
+            "background-color": "@color-swatch2",
+            "background-color-hover": "darken(@color-swatch2,10%)"
+        },
+        "font8": {
+            "font-family": "Droid Sans",
+            "font-size": "30px",
+            "font-weight": "400",
+            "line-height": "42px",
+            "color": "@color-swatch4",
+            "letter-spacing": "inherit"
+        },
+        "font9": {
+            "font-family": "Droid Sans",
+            "font-size": "20px",
+            "font-weight": "400",
+            "line-height": "30px",
+            "color": "@color-swatch2",
+            "letter-spacing": "inherit"
+        },
+        "font10": {
+            "font-family": "Droid Sans",
+            "font-size": "24px",
+            "font-weight": "400",
+            "line-height": "24px",
+            "color": "@color-swatch5",
+            "letter-spacing": "inherit"
+        }
+    }
 }
