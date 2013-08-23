@@ -1,7 +1,7 @@
-hotelkoya
+Rook Nightclub
 =================
 
-BaseKit's Hotel Koya Template
+BaseKit's Rook Nightclub
 
 Changes - 2013-05-22
 + Onto Develop Branch
