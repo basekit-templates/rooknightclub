@@ -76,13 +76,11 @@ p
 }
 
 blockquote {
-  background-image: image("/images/quote.svg");
+  background-image: image("/images/quote.png");
   background-repeat: no-repeat;
-  background-position: left center;
-  background-size: contain;
-  background-size: 80px 160px;
+  background-position: top left;
+  background-size: 75px;
   margin: 0 0 25px 0;
-
   }
 
   blockquote p {
@@ -325,11 +323,6 @@ footer .widget.content {
 }
 
 .widget.extendednavigation ul li.folder {
-  padding-right: 8px;
-  background-image: image('/images/arrow-down.svg');
-  background-size: 11px 14px;
-  background-position: right center;
-  background-repeat: no-repeat;
   height: 100%;
   cursor: pointer;
 }
@@ -956,7 +949,7 @@ hr.line.align-right {
 }
 
 .widget.twitter .twitter-profile-pic {
-  background-image: image("/images/twitter-profile-pic.svg");
+  background-image: image("/images/twitter-profile-pic.png");
   position: absolute;
   z-index: -1;
   background-repeat: no-repeat;
@@ -1568,16 +1561,24 @@ footer .widget.profile .twitter span {
   text-indent: -99999px;  
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-prev {
+.svg .widget.responsiveslideshow .slideshow-widget .btn-prev {
   left: 10px;
   background: image('/images/slideshow-arrow-left.svg') no-repeat center left;
   background-size: contain;
 }
 
-.widget.responsiveslideshow .slideshow-widget .btn-next {
+.widget.responsiveslideshow .slideshow-widget .btn-prev {
+  background: image('/images/slideshow-arrow-left.png') no-repeat center left;
+}
+
+.svg .widget.responsiveslideshow .slideshow-widget .btn-next {
   right: 10px;
   background: image('/images/slideshow-arrow-right.svg') no-repeat center right; 
   background-size: contain;   
+}
+
+.widget.responsiveslideshow .slideshow-widget .btn-next {
+  background: image('/images/slideshow-arrow-right.png') no-repeat center right; 
 }
 
 .widget.responsiveslideshow .slideshow-widget:hover .btn-prev, .widget.responsiveslideshow .slideshow-widget:hover .btn-next
@@ -1601,7 +1602,8 @@ footer .widget.profile .twitter span {
   cursor: pointer;
   z-index: 10;
   background: image('/images/slideshow-play.png') center no-repeat;
-  background-size: 100%;
+  background-size: contain;
+  text-indent: -99999px;
   width: 12%;
   height: 12%;
   top: 45%;
@@ -1614,7 +1616,7 @@ footer .widget.profile .twitter span {
 
 .widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause {
   background: image('/images/slideshow-pause.png') center no-repeat;
-  background-size: 100%;  
+  background-size: contain;  
 }
 
 .widget.responsiveslideshow .slideshow-widget-controls .dot {
