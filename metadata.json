@@ -14,31 +14,31 @@
             "color7":"#4f4f4f"
         },
         "Swatch 2": {
-            "color1":"#0c0b0c",
+            "color1":"#020202",
             "color2":"#373535",
-            "color3":"#7500b4",
+            "color3":"#5FB3C7",
             "color4":"#e2e2e2",
             "color5":"#a5a5a5",
             "color6":"#e2e2e2",
-            "color7":"#271f2d"
+            "color7":"#4f4f4f"
         },
         "Swatch 3": {
             "color1":"#000000",
             "color2":"#373535",
-            "color3":"#ccb760",
+            "color3":"#d4d200",
             "color4":"#ededee",
             "color5":"#dbdadd",
             "color6":"#ededee",
             "color7":"#3d4847"
         },
         "Swatch 4": {
-            "color1":"#000110",
+            "color1":"#020202",
             "color2":"#292828",
-            "color3":"#db4b56",
+            "color3":"#56d400",
             "color4":"#ebebed",
             "color5":"#ccccd3",
             "color6":"#ebebed",
-            "color7":"#803c3d"
+            "color7":"#4f4f4f"
         },
         "Swatch 5": {
             "color1":"#000000",
@@ -94,9 +94,9 @@
         },
         "font6": {
             "font-family": "Droid Sans",
-            "font-size": "15px",
+            "font-size": "13px",
             "font-weight": "400",
-            "line-height": "23px",
+            "line-height": "24px",
             "color": "@color-swatch6",
             "color-hover": "@color-swatch3",
             "letter-spacing": "inherit",
@@ -126,7 +126,7 @@
             "font-size": "20px",
             "font-weight": "400",
             "line-height": "30px",
-            "color": "@color-swatch2",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font10": {
