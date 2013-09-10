@@ -3,9 +3,9 @@
 	"thumbnail":"rooknightclub.png",
 	"screenshot":"rooknightclub.png",
     "tags": {
-    "en": ["professional", "dark", "clean", "business"],
-    "es": ["profesional", "oscuro", "limpio", "corporativo"],
-    "br": ["profissional", "escuro", "limpo", "corporativo"]
+    "en": ["professional", "dark", "clean", "business", "nightclub", "agency", "party", "creative", "elegant", "event", "sophisticated", "media"],
+    "es": ["profesional", "oscuro", "limpio", "corporativo", "club", "agencia", "fiesta", "creativo", "elegante", "evento", "sofisticado", "comunicacion"],
+    "br": ["profissional", "escuro", "limpo", "corporativo", "boate", "agência", "festa", "criativo", "elegante", "evento", "sofisticado", "mídia"]
     },
 	"colorSwatches":
     {
