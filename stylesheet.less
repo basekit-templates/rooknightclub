@@ -1,9 +1,4 @@
-/* ===============================
-   IMPORT CSS
-   =============================== */
-
 @import "@{templateCommon}/basekit-bootstrap.less";
-
 
 /* ===============================
    TEMPLATE STYLES
@@ -20,113 +15,6 @@ body {
     margin: 0 5%;
 }
 
-a {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  color:@color-swatch3;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-h1, h2, h3, h4, h5, p {
-  margin: 0;
-  padding: 0 0 10px;
-}
-
-h1 {
-  font-family:@font-swatch1-font-family;
-  font-weight: @font-swatch1-font-weight;
-  color:@font-swatch1-color;
-  line-height:@font-swatch1-line-height;
-  letter-spacing: @font-swatch1-letter-spacing;
-  font-size: @font-swatch1-font-size;
-}
-
-h2
-{
-  font-family:@font-swatch2-font-family;
-  font-size: @font-swatch2-font-size;
-  font-weight: @font-swatch2-font-weight;
-  line-height:@font-swatch2-line-height;
-  color: @font-swatch2-color;
-  letter-spacing: @font-swatch2-letter-spacing;
-}
-
-h3
-{
-  font-family:@font-swatch3-font-family;
-  font-size:@font-swatch3-font-size;
-  font-weight: @font-swatch3-font-weight;
-  color: @font-swatch3-color;
-  line-height:@font-swatch3-line-height;
-  letter-spacing: @font-swatch3-letter-spacing;
-}
-
-h4
-{
-  font-family:@font-swatch4-font-family;
-  font-size:@font-swatch4-font-size;
-  font-weight:@font-swatch4-font-weight;
-  line-height:@font-swatch4-line-height;
-  color:@font-swatch4-color;
-  letter-spacing: @font-swatch4-letter-spacing;
-}
-
-p
-{
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
-
-blockquote {
-  background-image: image("/images/quote.png");
-  background-repeat: no-repeat;
-  background-position: top left;
-  background-size: 75px;
-  margin: 0 0 25px 0;
-  font-family: droid serif;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:lighten(@color-swatch5,20%);
-  padding-left: 25px;
-  padding-top: 40px;
-  }
-
-  blockquote p {
-  font-family: droid serif;
-  font-size:@font-swatch5-font-size;
-  font-weight:@font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:lighten(@color-swatch5,20%);
-  padding-left: 40px;
-  padding-top: 40px;
-}
-
-
-ul, ol, li {
-  font-family:@font-swatch5-font-family;
-  font-size:@font-swatch5-font-size;
-  font-weight: @font-swatch5-font-weight;
-  line-height:@font-swatch5-line-height;
-  color:@font-swatch5-color;
-  letter-spacing: @font-swatch5-letter-spacing;
-}
-
-.bk-content-text ul, .bk-content-text ol, .bk-content-text li {
-  padding-left: 1.4em; 
-  text-indent: -1.4em;
-}
-
-
 /* ===============================
    CUSTOM CSS
    =============================== */
@@ -138,14 +26,10 @@ ul, ol, li {
 /* ===============================
    HEADER
    =============================== */
-body {
-  background-color: lighten(@color-swatch1,10%);
-}
 
-
-header {
+header.bk-header {
   padding: 0;
-  background-color: lighten(@color-swatch1,10%);
+  background-color: @color-swatch7;
 }
 
 .companyheader {
@@ -162,19 +46,6 @@ header {
   margin-top: 16px;
 }
 
-.companyname a:hover {
-  text-decoration: none;
-}
-
-.widget.companyname a {
-  font-family:@font-swatch10-font-family;
-  font-weight: @font-swatch10-font-weight;
-  color: @font-swatch10-color;
-  line-height:@font-swatch10-line-height;
-  letter-spacing: 5px;
-  font-size: @font-swatch10-font-size;
-}
-
 /* LOGO */
 
 .widget.logo {
@@ -189,29 +60,6 @@ header {
   overflow-y: hidden;
 }
 
-.widget.companyheader:before,
-.widget.companyheader:after {
-  content: " ";
-  display: table;
-}
-
-.widget.companyheader:after {
-  clear: both;
-}
-
-.widget.companyheader {
-  *zoom: 1;
-}
-
-.widget.companyheader .logo img {
-  max-width: 100%;
-  height: auto;
-}
-
-.widget.companyheader .logo-bottom {
-  display: none;
-}
-
 .widget.companyheader .company-name {
   display: block;
   margin-top: 6px;
@@ -221,68 +69,19 @@ header {
    FOOTER
    =============================== */
 
-footer {
+footer.bk-footer {
   padding: 4em 0;
   background-color: @color-swatch2;
   min-height: 150px;
 }
 
-footer p {
+footer.bk-footer p {
   font-family: @font-swatch5-font-family;
   padding-bottom: 5px;
 }
 
-footer .widget.content {
+footer.bk-footer .widget.content {
   padding: 0 0 5px;
-}
-
-
-/* ===============================
-   STANDARD NAVIGATION
-   =============================== */
-
-.widget.navigation {
-}
-
-.widget.navigation ul {
-  padding: 0;
-  margin: 0;
-}
-
-.widget.navigation ul.align-center li
-{
-  text-align: center;
-}
-
-.widget.navigation ul.align-left li
-{
-  text-align: left;
-}
-
-.widget.navigation ul.align-right li
-{
-  text-align: right;
-}
-
-.widget.navigation ul li {
-  float: left;
-  display: block;
-  padding-right: 30px;
-}
-
-.widget.navigation ul li a {
-  display: block;
-  font-family:@font-swatch6-font-family;
-  font-size:@font-swatch6-font-size;
-  font-weight: @font-swatch6-font-weight;
-  color: @font-swatch6-color;
-  line-height:@font-swatch6-line-height;
-  letter-spacing: @font-swatch6-letter-spacing;
-}
-
-.widget.navigation ul li a:hover {
-  text-decoration: none;
-  color: @font-swatch6-color-hover;
 }
 
 /* ===============================
@@ -290,144 +89,83 @@ footer .widget.content {
    =============================== */
 
 .widget.extendednavigation {
-  float: right;
-  position: relative;
-  background-color: transparent;
-  max-width: 690px;
-}
-
-.widget.extendednavigation a.pull {
-  display: none;
+    float: right;
+    position: relative;
+    max-width: 691px;
+    margin: 8px 0 0;
 }
 
 .widget.extendednavigation ul {
-  float: left;
-  padding: 0;
-  margin: 0;
-}
-
-.widget.extendednavigation ul.align-center li
-{
-  text-align: center;
-}
-
-.widget.extendednavigation ul.align-left li
-{
-  text-align: left;
-}
-
-.widget.extendednavigation ul.align-right li
-{
-  text-align: right;
+    float: left;
+    margin: 0;
+    padding: 8px 0;
 }
 
 .widget.extendednavigation ul li {
-  float: left;
-  display: block;
-  padding: 26px 0 20px 0;
+    float: left;
+    display: block;
 }
+
+.widget.extendednavigation ul li a,
+.widget.extendednavigation ul li.folder .text {
+    display: block;
+    padding: 10px 24px;
+    font-family: @font-swatch6-font-family;
+    font-size: @font-swatch6-font-size;
+    font-weight: @font-swatch6-font-weight;
+    color: @font-swatch6-color;
+    line-height: @font-swatch6-line-height;
+    letter-spacing: @font-swatch6-letter-spacing;
+}
+
+.widget.extendednavigation ul li a:hover,
+.widget.extendednavigation ul li.folder .text:hover {
+    color: @font-swatch6-color-hover;
+    text-decoration: none;
+}
+
+/* FOLDER */
 
 .widget.extendednavigation ul li.folder {
-  background-image: image('/images/arrow-down.png');
-  background-size: 20px;
-  background-position: right center;
-  background-repeat: no-repeat;
+    margin-right: 0;
+    padding-right: 10px;
 }
 
-.widget.extendednavigation ul li:hover {
-  background-color: @color-swatch1;
+.widget.extendednavigation ul li.folder:hover {
+    background-color: @color-swatch3;
 }
 
-
-.widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-  display: block;
-  padding: 1px 25px 1px 17px;
-  font-family:@font-swatch6-font-family;
-  font-size:@font-swatch6-font-size;
-  font-weight: @font-swatch6-font-weight;
-  color: @font-swatch6-color;
-  line-height:@font-swatch6-line-height;
-  letter-spacing: @font-swatch6-letter-spacing;
-  
+.widget.extendednavigation ul li.folder .text:hover {
+    color: @color-swatch6
 }
 
-.widget.extendednavigation ul li a:hover {
-  text-decoration: none;
+.widget .extendednavigation ul li.folder:after {
+    right: 15px;
 }
 
-.widget.extendednavigation ul li.folder {
-  height: 100%;
-  cursor: pointer;
+.widget.extendednavigation ul li:hover > ul {
+    display: block;
+    position: absolute;
+    background-color: @color-swatch3;
+    z-index: 500;
+    padding: 0;
+    margin: 0;
 }
 
-.widget.extendednavigation li > ul {
-  display: none;
-  background-color: @color-swatch2;
-}
-
-.widget.extendednavigation li:hover > ul {
-  display: block;
-  width: 50%;
-  position: absolute;
-  background-color: @color-swatch1;
-  z-index: 500;
-  margin-top: 20px;
-}
-
-.widget.extendednavigation li:hover > ul > li {
-  display: block;
-  width: 100%;
-  text-align: left;
-  border-bottom: 1px solid lighten(@color-swatch1,10%);
-  padding: 16px 0;
-}
-
-.widget.extendednavigation li:hover > ul > li:hover {
-  background-color: lighten(@color-swatch1,10%);
-}
-
-.widget.extendednavigation li:hover > ul > li:last-child {
-  border-bottom: none;
-}
-
-.widget.extendednavigation li:hover > ul > li > a {
-  display: block;
-  background-image: none;
-  color: @font-swatch6-color;
-  margin-left: 0;
-  padding: 0;
-}
-
-.widget.extendednavigation li:hover > ul > li > a .text {
-  margin-left: 0;
-}
-
-/* EXTENDED NAVIGATION - INSIDE ZONE */
-
-.main .widget.extendednavigation {
-    max-width: 100%;
+.widget.extendednavigation li:hover > ul li {
+    display: block;
     width: 100%;
-    float: none;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
 }
 
-.main .widget.extendednavigation ul {
-  margin: 0;
+.widget.extendednavigation li:hover > ul li:hover {
+    background-color: @font-swatch7-background-color-hover
 }
 
-.main .widget.extendednavigation ul li a, .main .widget.extendednavigation ul li.folder .text {
-  margin-left: 0;
-}
-
-.main .widget.extendednavigation:before,
-.main .widget.extendednavigation:after {
-  content: " ";
-  display: table;
-}
-.main .widget.extendednavigation:after {
-  clear: both;
-}
-.main .widget.extendednavigation {
-  *zoom: 1;
+.widget.extendednavigation li:hover > ul li a {
+    padding: 0
 }
 
 
@@ -490,8 +228,6 @@ footer .widget.content {
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
-  
-  letter-spacing: 2px;
   margin: 25px 0 80px;
 }
 
@@ -583,8 +319,6 @@ footer .widget.content {
 
 .widget.paypalbuynow .widget.button.paypal {
   border: 2px solid @color-swatch3;
-  
-  letter-spacing: 2px;
 }
 
 /* ===============================
@@ -593,8 +327,6 @@ footer .widget.content {
 
 .widget.dropbox .b-wrap .btn {
   border: 2px solid @color-swatch3;
-  
-  letter-spacing: 2px;
   padding: 10px 13px 10px 38px;
   background-position: 9px center;
 }
@@ -614,8 +346,6 @@ footer .widget.content {
   background: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
-  
-  letter-spacing: 2px;
   cursor: pointer;
 }
 
@@ -909,9 +639,7 @@ hr.line.align-right {
   font-size: @font-swatch7-font-size;
   font-weight:@font-swatch7-font-weight;
   color: @font-swatch7-color;
-  text-decoration: none;
-  letter-spacing: 2px;
-  
+  text-decoration: none; 
   cursor: default;
 }
 
@@ -1127,8 +855,6 @@ hr.line.align-right {
     font-weight:@font-swatch7-font-weight;
     background: @font-swatch7-background-color;
     color: @font-swatch7-color;
-    
-    letter-spacing: 2px;
     text-decoration: none;
     float: right;
 }
@@ -1225,8 +951,6 @@ hr.line.align-right {
     background-color: @font-swatch7-background-color;
     color: @font-swatch7-color;
     text-decoration: none;
-    
-    letter-spacing: 2px;
     cursor: pointer;
 }
 
@@ -1264,13 +988,9 @@ hr.line.align-right {
 }
 
 .widget.tweet a {
-  padding: 10px 13px 10px 38px;
+  padding: 10px 10px 10px 40px;
   margin: 0;
   border: none;
-  background-image: image('/images/twitter.png');
-  background-repeat: no-repeat;
-  background-position: 13px 12px;
-  margin: 2.2em auto;
   border: 2px solid #4099ff;
   font-family: @font-swatch7-font-family;
   font-size: @font-swatch7-font-size;
@@ -1278,8 +998,6 @@ hr.line.align-right {
   color: @font-swatch7-color;
   background-color: @font-swatch7-background-color;
   text-decoration: none;
-  
-  letter-spacing: 2px;
   cursor: pointer;
 }
 
@@ -1291,31 +1009,24 @@ hr.line.align-right {
    PROFILE WIDGET
    =============================== */
 
-.widget.profile span {
-  display: block;
-  font-family: @font-swatch5-font-family;
-  font-size: @font-swatch5-font-size;
-  line-height: @font-swatch5-line-height;
-  color: @font-swatch5-color;
-}
-
-footer .widget.profile span {
-  display: block;
-  font-family: @font-swatch5-font-family;
-  font-size: @font-swatch5-font-size;
-  line-height: @font-swatch5-line-height;
-  color: lighten(@color-swatch5,10%);
+.widget.profile span,
+.widget.profile a {
+    display: block;
+    font-size: @font-swatch5-font-size;
+    font-family: @font-swatch5-font-family;
+    color: @color-swatch4;
+    line-height: @font-swatch5-line-height;
+    font-weight: @font-swatch5-font-weight;
 }
 
 .widget.profile a {
-  color: lighten(@color-swatch5,10%);
+    color: @color-swatch4;
 }
 
 .widget.profile a:hover {
-  color: @color-swatch3;
-  text-decoration: none !important;
+    color: @color-swatch1;
+    text-decoration: none;
 }
-
 
 /* LATEST TWEET */
 
@@ -1371,13 +1082,13 @@ footer .widget.profile span {
    color: @color-swatch3;
 }
 
-footer .widget.profile .twitter span {
+footer.bk-footer .widget.profile .twitter span {
   display: inline;
 }
 
 /*  SOCIAL ICONS IN PROFILE DATA */
 
-footer .widget.profile .bk-profile-socialicons span a {
+footer.bk-footer .widget.profile .bk-profile-socialicons span a {
   background-color: transparent;
 }
 
@@ -1540,8 +1251,6 @@ footer .widget.profile .bk-profile-socialicons span a {
 
 /* SINGLE EMAIL FORM IN FOOTER*/
 
-
-
 .widget.profile fieldset {
     border: none;
     margin: 0;
@@ -1560,18 +1269,18 @@ footer .widget.profile .bk-profile-socialicons span a {
     margin-bottom: 7px;
 }
 
-.widget.profile fieldset input {
-    height: 41px;
+.widget.profile form fieldset input {
+    height: 54px;
     width: 100%;
     float: left;
     border: none;
     font-family: @font-swatch5-font-family;
     font-size: @font-swatch5-font-size;
     color: @font-swatch5-color;
-    background-color: @color-swatch7;
+    background-color: @color-swatch4;
     margin-bottom: 15px;
     text-indent: 8px;
-    float:left;
+    float: left;
     padding: 0;
 }
 
@@ -1582,19 +1291,17 @@ footer .widget.profile .bk-profile-socialicons span a {
 
 .widget.profile fieldset button.btn {
     cursor: pointer;
-    padding: 10px;
+    padding: 10px 14px 8px;
     float: left;
     margin-top: 6px;
     margin: 0;
-    border: 1px solid @color-swatch3;
+    border: 2px solid @color-swatch3;
     font-family: @font-swatch7-font-family;
     font-size: @font-swatch7-font-size;
     font-weight:@font-swatch7-font-weight;
     background-color: @font-swatch7-background-color;
     color: @font-swatch7-color;
     text-decoration: none;
-    
-    letter-spacing: 2px;
 }
 
 .widget.profile fieldset button.btn:hover {
@@ -1607,142 +1314,230 @@ footer .widget.profile .bk-profile-socialicons span a {
    SLIDESHOW WIDGET
    =============================== */
 
-
-.widget.responsiveslideshow .slideshow-image-list {
-    height: 500px;
+.widget.responsiveslideshow {
+    .slideshow-image-list,
+    .slideshow-widget {
+        min-height: 450px;
+        @media @tablet {
+            min-height: 350px;
+        }
+        @media @mobile {
+            min-height: 280px;
+            height: 280px;
+        }
+    }
+    .title,
+    .description {
+        display: block;
+        color: @color-swatch4;
+        font-size: 13px;
+        padding: 3px 5px;
+    }
+    .content-wrapper {
+        background: rgba(0,0,0,0.5);
+    }
+    .slideshow-widget {
+        /* Arrows */
+        .btn-prev,
+        .btn-next {
+            font-size: 0;
+            z-index: 11;
+            text-indent: -99999px;
+            width: 40px;
+            height: 40px;
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            @media @tablet {
+                width: 30px;
+                height: 30px;
+            }
+        }
+        .btn-prev {
+            background-image: image('/images/arrow-prev.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .btn-next {
+            background-image: image('/images/arrow-next.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        /* Play Button */
+        .btn-play {
+            top: 40%;
+            width: 50px;
+            height: 50px;
+            background: rgba(0,0,0,0.5);
+            -webkit-border-radius: 4px;
+            -moz-border-radius: 4px;
+            border-radius: 4px;
+            &:after {
+                color: #fff;
+                letter-spacing: -4px;
+                top: 2px;
+                line-height: 45px;
+            }
+            @media @tablet {
+                top: 43%;
+                width: 40px;
+                height: 40px;
+                &:after {
+                    line-height: 38px;
+                    font-size: 26px;
+                }
+            }
+            @media @mobile {
+                top: 41%;
+            }
+        }
+    }
+    /* Slideshow Controls */
+    .slideshow-widget-controls {
+        .dot {
+            width: 11px;
+            height: 11px;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            border-radius: 50%;
+            &.selected {
+                background-color: @color-swatch3;
+                width: 11px;
+                height: 11px;
+            }
+        }
+    }
 }
-
-.widget.responsiveslideshow .slideshow-widget {
-    background-color: transparent;
-}
-.widget.responsiveslideshow span.inner img {
-  width: auto;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
-  display: none;
-  position: absolute;
-  width: 10%;
-  height: 10%; 
-  font-size: 0;
-  z-index: 11;
-  text-indent: -99999px;  
-}
-
-.svg .widget.responsiveslideshow .slideshow-widget .btn-prev {
-  left: 10px;
-  background: image('/images/slideshow-arrow-left.svg') no-repeat center left;
-  background-size: contain;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev {
-  background: image('/images/slideshow-arrow-left.png') no-repeat center left;
-}
-
-.svg .widget.responsiveslideshow .slideshow-widget .btn-next {
-  right: 10px;
-  background: image('/images/slideshow-arrow-right.svg') no-repeat center right; 
-  background-size: contain;   
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-next {
-  background: image('/images/slideshow-arrow-right.png') no-repeat center right; 
-}
-
-.widget.responsiveslideshow .slideshow-widget:hover .btn-prev, .widget.responsiveslideshow .slideshow-widget:hover .btn-next
-{
-  display: block;
-  cursor: pointer;
-}
-
-.widget.responsiveslideshow .slideshow-widget-controls {
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.slideshow-empty {
-    padding: 10px;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-play {
-  display: none;
-  position: absolute;
-  cursor: pointer;
-  z-index: 10;
-  background: image('/images/slideshow-play.png') center no-repeat;
-  background-size: contain;
-  text-indent: -99999px;
-  width: 12%;
-  height: 12%;
-  top: 45%;
-  left: 45%;
-}
-
-.widget.responsiveslideshow .slideshow-widget:hover .btn-play {
-  display:block;
-}
-
-.widget.responsiveslideshow .slideshow-widget:hover .btn-play.pause {
-  background: image('/images/slideshow-pause.png') center no-repeat;
-  background-size: contain;  
-}
-
-.widget.responsiveslideshow .slideshow-widget-controls .dot {
-  width: 6px;
-  height: 6px;
-  border: 2px solid @color-swatch2;
-  line-height: 14px;
-  display: inline-block;
-  background-color: @color-swatch2;
-  cursor: pointer;
-}
-
-.widget.responsiveslideshow .slideshow-widget-controls .dot.selected {
-   border: 2px solid @color-swatch3;
-}
-
-.widget.responsiveslideshow .slideshow-widget .btn-prev.disabled, .widget.responsiveslideshow .slideshow-widget .btn-next.disabled, .widget.responsiveslideshow .slideshow-widget .btn-play.disabled {
-  opacity:0.4;
-  cursor: default;
-}
-
-.widget.responsiveslideshow .dot {
-  border: none;
-}
-
-.widget.responsiveslideshow .content-wrapper {
-    position:absolute;
-    bottom:0;
-    left:0;
-    right:0;
-    top:auto;
-    background-color: @color-swatch1;
-}
-
-.widget.responsiveslideshow .title {
-    display: block;
-    font-family:@font-swatch5-font-family;
-    font-size:@font-swatch5-font-size;
-    font-weight: @font-swatch5-font-weight;
-    line-height:@font-swatch5-line-height;
-    color:@font-swatch5-color;
-    letter-spacing: @font-swatch5-letter-spacing;
-    text-align: center;
-    padding: 5px 0;
-}
-
-.widget.responsiveslideshow .description {
-    display: none;
-}
-
-
 
 /* ===============================
-   MAP WIDGET
+   BLOG
    =============================== */
 
-.widget.map {
-  border: 1px solid #DDDDDD;
+.widget {
+    &.bloglistposts {
+        .blog-post-item {
+            padding: 30px;
+            background-color: lighten(@color-swatch1,15%);
+        }
+        .blog-post-feature-image-wrap {  /* Blog post feature image */
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 250px;
+            width: 250px;
+            margin-bottom: 20px;
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+.blog-post-item {
+    margin: 1.5em 0;
+    padding-bottom: 1em;
+    h2 {
+        a {
+            font-family: @font-swatch2-font-family;
+            font-size: @font-swatch2-font-size;
+            font-weight: @font-swatch2-font-weight;
+            line-height: @font-swatch2-line-height;
+            color: @font-swatch2-color;
+            letter-spacing: @font-swatch2-letter-spacing;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}
+
+.blog-post-metadata {
+    background-color: transparent;
+    background-image: none;
+    margin-top: 0;
+    text-align: left;
+}
+
+.blog-list-footer {
+    background-color: transparent;
+    background-image: none;
+}
+
+.blog-post-more-link {
+    float: left;
+    width: 100%;
+}
+
+/* BLOG SEARCH */
+.blogsearch {
+    form {
+        label {
+            display: block;
+            margin-bottom: .6em;
+            font-family: @font-swatch4-font-family;
+            font-size: @font-swatch4-font-size;
+            font-weight: @font-swatch4-font-weight;
+            line-height: @font-swatch4-line-height;
+            color: @font-swatch4-color;
+            letter-spacing: @font-swatch4-letter-spacing;
+        }
+        input {
+            width: 60%;
+            height: 54px;
+            margin-bottom: 10px;
+            background-color: @color-swatch4;
+        }
+        button {
+            background-color: @font-swatch7-background-color;
+            font-family: @font-swatch7-font-family;
+            font-size: @font-swatch7-font-size;
+            font-weight: @font-swatch7-font-weight;
+            line-height: @font-swatch7-line-height;
+            color: @font-swatch7-color;
+            letter-spacing: @font-swatch7-letter-spacing;
+            padding: 10px 16px;
+            border: 2px solid @color-swatch2;
+            margin: 0;
+            text-decoration: none;
+            &:hover {
+                background-color: @font-swatch7-background-color-hover;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/* ===============================
+   MENU
+   =============================== */
+
+.menu {
+    .menu-item-image-wrap {
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 180px;
+        margin: 0.25em 0 0.75em;
+        background-position: center;
+        @media @mobile {
+           margin: 1em 0 0.5em;
+        }
+        img {
+           display: none;
+        }
+    }
+    .menu-items {
+        .menu-item {
+            padding: 30px;
+            background-color: lighten(@color-swatch1,15%);
+            margin-bottom: 30px;
+        }
+    }
+    .menu-subsection {
+        padding: 30px;
+        background-color: lighten(@color-swatch1,20%);
+    }
 }
 
 /* ===============================
@@ -1751,7 +1546,7 @@ footer .widget.profile .bk-profile-socialicons span a {
 
 @media only screen and (max-width: 768px) {
 
-  header {
+  header.bk-header {
     padding: 0;
     border-bottom: 0;
   }
@@ -1760,6 +1555,7 @@ footer .widget.profile .bk-profile-socialicons span a {
     width: 100%;
     display: block;
     margin: 0 auto;
+    padding: 10px 0 0;
   }
 
   .widget.companyname a {
@@ -1768,99 +1564,39 @@ footer .widget.profile .bk-profile-socialicons span a {
 
   /* NAV */
 
-  .widget.extendednavigation {
+.widget .extendednavigation a.pull:after {
+    top: -49px;
+    font-size: 30px;
+    color: @color-swatch4;
+}
+
+.widget.extendednavigation {
     width: 100%;
-    max-width: 100%;
     padding: 0;
-    border-top: 1px solid @color-swatch7;
-  }
-  .widget .extendednavigation {
-    display: block;
-    float: left;
-    width: 100%;
-  }
+    margin: 0;
+}
 
-    /* NAV ICON */
+/* NAV */
 
-  .widget .extendednavigation a.pull {
-    display: block;
-    width: 100%;
-    position: absolute;
-    top: 10px;
-  }
-
-    .widget .extendednavigation a.pull:after {
-    content:"";
-    background: image('/images/nav-icon.png') no-repeat;
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    position: absolute;
-    right: 0;
-    top: -50px;
-  }
-
-  #page-zones__template-widgets__extendednavigation-navigationheader {
-    overflow: visible;
-  }
-
-   /* NAV */
-
- .widget .extendednavigation ul {
+.widget .extendednavigation ul {
     width: 100%;
     display: none;
-    margin: 0;
-  }
+    border-top: 1px solid lighten(@color-swatch7,8%);
+    padding: 20px 0;
+}
 
-  .widget.extendednavigation ul li {
-  padding: 16px 0;
-  }
-
-  .widget .extendednavigation li {
+.widget .extendednavigation ul li {
     width: 100%;
     padding: 0;
-  }
+    border-bottom: 0;
+}
 
-  .widget.extendednavigation ul li a, .widget.extendednavigation ul li.folder .text {
-      padding-left: 7px;
-      margin: 0;
-  }
-
-  .widget.extendednavigation ul li.folder:hover .text {
-  }
-
-  .widget.extendednavigation ul li > ul {
-      display: none!important;
-  }
-
-  .widget.extendednavigation ul li:hover > ul {
-      display: block!important;
-      width: 100%;
-      margin: 17px 0;
-      padding: 0;
-  }
-
-  /* EXTENDED NAVIGATION - INSIDE ZONE */
-
-  .main .widget.extendednavigation {
-   border-top: 0;
-  }
-
-  .main .widget.extendednavigation ul {
+.widget.extendednavigation ul li:hover > ul {
+    display: block!important;
+    width: 100%;
+    border-top: 1px solid darken(@color-swatch3,15%);
     margin: 0;
-  }
-
-
-  /* EXTENDED NAVIGATION - INSIDE ZONE */
-
-  .main .widget.extendednavigation {
-   border-top: 0;
-  }
-
-  .main .widget.extendednavigation ul {
-    margin: 0;
-  }
-
+}
 
   /* OTHER */
 
@@ -1912,17 +1648,6 @@ footer .widget.profile .bk-profile-socialicons span a {
       width: 50%;
       padding-bottom: 50%;
   }
-
-     /* Slideshow */
-  .widget.responsiveslideshow .slideshow-image-list {
-      height: 400px;
-  }
-
-  .widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
-    width: 12%;
-    height: 12%;
-  }
-
 
 }
 
@@ -2021,8 +1746,6 @@ footer .widget.profile .bk-profile-socialicons span a {
   background-color: @font-swatch7-background-color;
   color: @font-swatch7-color;
   text-decoration: none;
-  letter-spacing: 2px;
-  
   cursor: pointer;
 }
 
@@ -2059,23 +1782,6 @@ footer .widget.profile .bk-profile-socialicons span a {
     padding: 20px 0;
     display:block;
   }
-
-
-  /* SLIDESHOW */
-  .widget.responsiveslideshow .description {
-    display:none;
-  }
-
-  .widget.responsiveslideshow .slideshow-image-list {
-      height: 200px;
-  }
-
-  .widget.responsiveslideshow .slideshow-widget .btn-prev, .widget.responsiveslideshow .slideshow-widget .btn-next {
-    width: 15%;
-    height: 15%;
-  }
-
-
 
    /* GALLERY */
 
