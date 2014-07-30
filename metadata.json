@@ -3,6 +3,7 @@
 	"thumbnail":"rooknightclub.png",
 	"screenshot":"rooknightclub.png",
 	"templateType":"standard",
+    "pageTypes":["home"],
     "tags": {
     "en": ["professional", "dark", "clean", "business", "nightclub", "agency", "party", "creative", "elegant", "event", "sophisticated", "media"],
     "es": ["profesional", "oscuro", "limpio", "corporativo", "club", "agencia", "fiesta", "creativo", "elegante", "evento", "sofisticado", "comunicacion"],
