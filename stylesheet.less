@@ -1717,13 +1717,13 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
     text-shadow: 0 1px 0px rgba(0,0,0,0.2);
 }
 
-// Basket Summary
 
+// Basket Summary
 
 .widget.ecombasketsummary {
     // Title
     .basket-summary-title {
-        border-bottom: 2px solid @color-swatch3;
+        border-bottom: 2px solid darken(@color-swatch1,10%);
     }
 
     // Empty basket
@@ -1764,9 +1764,9 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                 display: none;
             }
             th {
-                border-bottom: 1px solid @color-swatch3;
+                border-bottom: 1px solid darken(@color-swatch1,10%);
                 &:nth-child(2) {
-                    border-right: 0px @color-swatch3;
+                    border-right: 0px darken(@color-swatch1,10%);
                 }
 
             }
@@ -1775,14 +1775,14 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
         tr.basket-summary-items {
             @media @mobile {
                 position: relative;
-                border-top: 1px @color-swatch3;
+                border-top: 1px darken(@color-swatch1,10%);
                 padding: 0 0 10px 0;
                 margin: 0 0 10px 0;
 
             }
 
             td {
-                border-bottom: 1px @color-swatch3;
+                border-bottom: 1px darken(@color-swatch1,10%);
                 @media @mobile {
                     border-bottom: none;
                 }
@@ -1822,11 +1822,13 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                 position: relative;
                 @media @tablet{
                     padding-right: 0;
+                    float: left;
                 }
                 @media @mobile {
                     width: auto;
                     padding-left: 0;
                     border-right: none;
+                    float: none;
                 }
                 // Name
                 .basket-summary-productname {
@@ -1849,7 +1851,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                     position: absolute;
                     right: 20px;
                     display: block;
-                    top: 20px;
+                    top: 0px;
                     height: 20px;
                     line-height: 30px;
                     text-align: center;
@@ -1861,6 +1863,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                     }
                     @media @mobile {
                         width: 130px;
+                        height: 50px;
                     }
                 }
                 // Quantity button
@@ -1869,17 +1872,17 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                     margin: 0;
                     position: absolute;
                     width: 150px;
-                    right: 20px;
-                    top: 50px;
                     height: 40px;
                     @media @tablet {
                         position: relative;
                         right: 0;
                         top: 0;
+                        float: right;
                     }
                     @media @mobile {
                         height: 30px;
                         width: 130px;
+                        float: none;
                     }
                     button {
                         font-family: @font-swatch5-font-family;
@@ -1942,7 +1945,7 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                     text-align: left;
                     position: absolute;
                     right: 0;
-                    bottom: 20px;
+                    bottom: 10px;
                 }
             }
         }
@@ -1951,8 +1954,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
         tbody tr:last-child {
             td {
                 font-size: @font-swatch4-font-size;
-                border-top: 1px solid @color-swatch3;
-                border-bottom: 2px solid @color-swatch3;
+                border-top: 1px solid darken(@color-swatch1,10%);
+                border-bottom: 2px solid darken(@color-swatch1,10%);
                 @media @mobile {
                     text-align: left;
                     border-top: 0;
@@ -1962,8 +1965,8 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
                 &.basket-summary-subtotal {
                     text-align: right;
                     @media @mobile {
-                        border-top: 2px solid @color-swatch3;
-                        border-bottom: 2px solid @color-swatch3;
+                        border-top: 2px solid darken(@color-swatch1,10%);
+                        border-bottom: 2px solid darken(@color-swatch1,10%);
                     }
                 }
             }
