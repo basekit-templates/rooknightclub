@@ -1315,20 +1315,18 @@ footer.bk-footer .widget.profile .bk-profile-socialicons span a {
             padding: 30px;
             background-color: lighten(@color-swatch1,15%);
         }
-        .blog-post-feature-image-wrap {  /* Blog post feature image */
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            height: 250px;
-            max-height: 250px;
-            width: 100%;
-            margin-bottom: 20px;
-            img {
-                display: none;
-            }
-        }
     }
 }
+
+.blog-post-feature-image-wrap {  /* Blog post feature image */
+      width: 100%;
+      background-position: -1000%;
+      margin-bottom: 20px;
+      line-height: 0;
+      img {
+        max-height: 500px;
+      }
+  }
 
 .blog-post-item {
     margin: 1.5em 0;
