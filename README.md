@@ -3,6 +3,10 @@ Rook Nightclub
 
 BaseKit's Rook Nightclub
 
+Changes - 2014-08-11
++ Template review fixes
++ Basket summary style updates
+
 Changes - 2013-05-22
 + Onto Develop Branch
 
