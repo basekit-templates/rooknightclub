@@ -30,6 +30,8 @@ body {
 header.bk-header {
   padding: 0;
   background-color: @color-swatch7;
+  min-height: 80px;
+
   .wrapper {
     padding: 9px 0;
     // Flex parent
@@ -74,6 +76,12 @@ header.bk-header {
     }
   }
 }
+
+.widget .extendednavigation a.pull {
+  top: 0px;
+}
+
+
 
 
 /* COMPANY NAME */
@@ -2071,7 +2079,6 @@ a.btn.ecom-product-go-to-checkout-btn {
 .widget .extendednavigation ul {
     width: 100%;
     display: none;
-    border-top: 1px solid lighten(@color-swatch7,8%);
     padding: 40px 0 20px 0;
     margin-top: 10px;
 }
@@ -2080,20 +2087,17 @@ a.btn.ecom-product-go-to-checkout-btn {
   padding-top: 20px;
 }
 
-.widget .extendednavigation a.pull {
-  top: 0px;
-  right: -7px;
-  margin-top: 12px;
+// .widget .extendednavigation a.pull {
+//   top: 0px;
+//   right: -7px;
+//   margin-top: 12px;
 
-  &:after {
-    top: 12px;
-    right: 7px;
-  }
-}
+//   &:after {
+//     top: 12px;
+//     right: 7px;
+//   }
+// }
 
-.bk-header.home .widget .extendednavigation a.pull  {
-  top: -53px;
-}
 
 .widget .extendednavigation ul li {
     width: 100%;
