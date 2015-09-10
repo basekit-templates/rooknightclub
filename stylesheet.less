@@ -78,9 +78,18 @@ header.bk-header {
 }
 
 .widget .extendednavigation a.pull {
-  top: 0px;
-  position: inherit;
+  top: 0;
 }
+
+
+.widget.companyname + .widget.extendednavigation,
+.widget.logo + .widget.extendednavigation   {
+  & a.pull {
+    top: -43px;
+    position: absolute;
+  }
+}
+
 
 
 
