@@ -1,7 +1,7 @@
 {
 	"name":"Rook Nightclub",
 	"thumbnail":"rooknightclub.png",
-	"screenshot":"rooknightclub.png",
+	"screenshot":"rooknightclub-screenshot.jpg",
 	"templateType":"standard",
     "pageTypes":["home"],
     "tags": {
