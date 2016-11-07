@@ -751,7 +751,7 @@ hr.line.align-right {
 }
 
 /* ===============================
-   CONTACT FORM WIDGET
+   CONTACT FORM WIDGET + ADVANCED 
    =============================== */
 
 .widget.contactform form {
@@ -774,7 +774,8 @@ hr.line.align-right {
     letter-spacing: @font-swatch5-letter-spacing;
 }
 
-.widget.contactform fieldset input {
+.widget.contactform fieldset input,
+.advancedcontactform__input {
     height: 40px;
     width: 100%;
     border: none;
@@ -788,12 +789,14 @@ hr.line.align-right {
     padding: 0;
 }
 
-.widget.contactform fieldset input:focus {
+.widget.contactform fieldset input:focus,
+.advancedcontactform__input:focus {
     outline: none;
     box-shadow: 0 0 10px #d19a11;
 }
 
-.widget.contactform fieldset textarea {
+.widget.contactform fieldset textarea,
+.advancedcontactform__textarea {
     height: 100px;
     width: 100%;
     border: none;
@@ -809,12 +812,14 @@ hr.line.align-right {
     padding: 0;
 }
 
-.widget.contactform fieldset textarea:focus {
+.widget.contactform fieldset textarea:focus,
+.advancedcontactform__textarea:focus {
     outline: none;
     box-shadow: 0 0 10px #d19a11;
 }
 
-.widget.contactform fieldset button.btn {
+.widget.contactform fieldset button.btn,
+.advancedcontactform__button {
     padding: 10px;
     margin: 0;
     border: 2px solid @color-swatch3;
@@ -824,10 +829,10 @@ hr.line.align-right {
     background: @font-swatch7-background-color;
     color: @font-swatch7-color;
     text-decoration: none;
-    float: right;
 }
 
-.widget.contactform fieldset button.btn:hover {
+.widget.contactform fieldset button.btn:hover,
+.advancedcontactform__button:hover {
   background-color: @font-swatch7-background-color-hover;
   cursor: pointer;
 }
@@ -859,6 +864,36 @@ hr.line.align-right {
 .widget.contactform fieldset button.btn.bold {
     font-weight: bold;
 }
+
+.advancedcontactform__select {
+    cursor: pointer;
+    position: relative;
+    margin: 0;
+    color: @color-swatch5;
+    position: relative;
+    display: inline-block;
+    font-family: @font-swatch7-font-family;
+    font-size: @font-swatch7-font-size;
+    font-weight: @font-swatch7-font-weight;
+    line-height: 1;
+    border-radius: 0;
+    webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 1px solid @color-swatch5;
+    background-color: @color-swatch6;
+    padding: 8px 38px 8px 14px;
+    text-indent: 0;
+    letter-spacing: 0;
+    float: none;
+    height: 41px;
+    margin-bottom: 10px;
+    @media @mobile {
+       display: block;
+       width: 100%;
+    }
+}
+
 
 
 /* ===============================
