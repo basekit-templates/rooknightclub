@@ -1,5 +1,6 @@
 {
 	"name":"Rook Nightclub",
+	"versionTenCompatible": 1,
 	"thumbnail":"rooknightclub.png",
 	"screenshot":"rooknightclub-screenshot.jpg",
 	"templateType":"standard",
